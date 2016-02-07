@@ -5,6 +5,8 @@ var app = express();
 
 require('dotenv').config({silent: true});
 
+var port = process.env.PORT || 8080;
+
 app.get('/', function (req, res) {
 	var result = {
 		error: false,
@@ -32,7 +34,7 @@ app.get('/', function (req, res) {
     });
 });
 
-var server = app.listen(3000, function () {
+var server = app.listen(port, function () {
 	var host = server.address().address;
 	var port = server.address().port;
 
