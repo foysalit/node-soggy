@@ -1,0 +1,29 @@
+{
+  "name": "trello-warp",
+  "version": "1.0.0",
+  "description": "trello warp tunnel",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/foysalit/trello-warp.git"
+  },
+  "keywords": [
+    "trello"
+  ],
+  "author": "foysal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foysalit/trello-warp/issues"
+  },
+  "homepage": "https://github.com/foysalit/trello-warp#readme",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "request": "^2.69.0"
+  }
+}
