@@ -27,9 +27,13 @@ app.get('/', function (req, res) {
 			return res.json(result);
 		}
 
-        var $ = cheerio.load(html);
+        var $ = cheerio.load(html),
+        	$content = $('.content');
 
-        var $result = $('.content').children('strong');
+        if ($content.find('.m-ok').length > 0)
+        	return res.json($content.find('.m-ok').text());
+
+        var $result = $content.children('strong');
 
         if ($result.length > 0)
 	        result.data = $result.text();
