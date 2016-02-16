@@ -30,8 +30,10 @@ app.get('/', function (req, res) {
         var $ = cheerio.load(html),
         	$content = $('.content');
 
-        if ($content.find('.m-ok').length > 0)
-        	return res.json($content.find('.m-ok').text());
+        if ($content.find('.m-ok').length > 0) {
+        	result.data = $content.find('.m-ok').text();
+        	return res.json(result);
+        }
 
         var $result = $content.children('strong');
 
