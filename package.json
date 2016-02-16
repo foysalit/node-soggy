@@ -1,24 +1,25 @@
 {
-  "name": "trello-warp",
+  "name": "soggy",
   "version": "1.0.0",
-  "description": "trello warp tunnel",
+  "description": "Node.js server for ionic-soggy mobile app.",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/foysalit/trello-warp.git"
+    "url": "git+ssh://git@github.com/foysalit/node-soggy.git"
   },
   "keywords": [
-    "trello"
+    "permesso di soggiorno",
+    "soggiorno"
   ],
   "author": "foysal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/foysalit/trello-warp/issues"
+    "url": "https://github.com/foysalit/node-soggy/issues"
   },
-  "homepage": "https://github.com/foysalit/trello-warp#readme",
+  "homepage": "https://github.com/foysalit/node-soggy#readme",
   "dependencies": {
     "cheerio": "^0.20.0",
     "dotenv": "^1.2.0",
